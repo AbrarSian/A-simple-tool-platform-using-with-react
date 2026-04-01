@@ -14,7 +14,7 @@
 
 <br>
 
-## : UI / UX Highlights
+##  UI / UX Highlights
 
 -  Mobile-first responsive design  
 -  Clean and modern interface  

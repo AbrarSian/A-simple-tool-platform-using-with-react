@@ -9,7 +9,9 @@ const Single_Card = ({ d, carts, setCarts }) => {
     setIsBuyNow(true);
     const isFound = carts.find(cart => cart.id === d.id);
     if(isFound) {
-      toast.error("Item Already In Cart");
+      toast.error("Item Already In Cart", {
+        className : "text-xs sm:text-sm md:text-base px-3 py-2 sm:px-4 sm:py-3 max-w-65 sm:max-w-sm"
+      });
       return
     }
     setCarts([...carts, d]);

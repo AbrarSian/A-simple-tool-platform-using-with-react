@@ -5,10 +5,10 @@ const Premium_Title = ({activeTab , setActiveTab, carts}) => {
     <div>
       {/* title part */}
       <div className="space-y-4 flex flex-col justify-center items-center text-center">
-        <h1 className="text-4xl lg:text-5xl font-extrabold">
+        <h1 className="text-4xl w-11/12 lg:w-full lg:text-5xl font-extrabold">
           Premium Digital Tools
         </h1>
-        <p className="text-[#627382] mb-6 lg:w-6/12">
+        <p className="text-[#627382] w-11/12 mb-6 lg:w-6/12">
           Choose from our curated collection of premium digital products
           designed to boost your productivity and creativity.
         </p>
