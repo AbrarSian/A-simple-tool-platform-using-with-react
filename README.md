@@ -1,4 +1,3 @@
-### Hello Guys, nice to see you here!
 ## :computer: Technologies that used in this program
 
 <br>
