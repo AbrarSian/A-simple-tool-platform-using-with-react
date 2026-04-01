@@ -28,8 +28,8 @@ function App() {
     <>
      <div className="max-w-400 mx-auto">
 
-        <div className="lg:w-[85%] mx-auto sticky top-0 z-50">
-          <Navbar carts={carts}></Navbar>
+        <div className="bg-base-100 shadow-sm sticky top-0 z-50">
+          <Navbar setActiveTab={setActiveTab} carts={carts}></Navbar>
         </div>
 
         <div className="lg:w-[85%] mx-auto">

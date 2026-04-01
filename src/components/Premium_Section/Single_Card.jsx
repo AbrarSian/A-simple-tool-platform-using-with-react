@@ -13,13 +13,15 @@ const Single_Card = ({ d, carts, setCarts }) => {
       return
     }
     setCarts([...carts, d]);
-    toast.success("Item Added To Cart")
+    toast.success("Item Added To Cart", {
+      className : "text-xs sm:text-sm md:text-base px-3 py-2 sm:px-4 sm:py-3 max-w-65 sm:max-w-sm"
+    })
   }
 
   return (
     <div>
       {/* dynamic card */}
-      <div className="mx-auto rounded-3xl card w-96 bg-base-100 border border-[#d5d2d2] shadow-sm hover:lg:scale-105 transition-all hover:shadow-md">
+      <div id="products" className="mx-auto scroll-mt-50 rounded-3xl card w-96 bg-base-100 border border-[#d5d2d2] shadow-sm hover:lg:scale-105 transition-all hover:shadow-md">
         <div className="card-body">
           {/* badge */}
           <div className={`ml-auto badge badge-lg ${d.tagType === "best seller"? "rounded-2xl badge-warning font-bold text-[#BB4D00] bg-[#FEF3C6]" : d.tagType === "popular"? "badge-info text-[#4F39F6] font-bold bg-[#E1E7FF] rounded-2xl" : "rounded-2xl font-bold badge-success text-[#0A883E] bg-[#DBFCE7]"}`}>
@@ -28,7 +30,7 @@ const Single_Card = ({ d, carts, setCarts }) => {
           <div className="space-y-4">
             {/* icon */}
             <div className="border border-[#F2F2F2] rounded-full p-3 w-16 flex justify-center items-center">
-              <img className="w-10" src={d.icon} alt="" />
+              <img className="w-10 rounded-lg" src={d.icon} alt="" />
             </div>
             <h2 className="text-3xl font-bold">{d.name}</h2>
             <p className="text-[#627382]">
@@ -60,7 +62,7 @@ const Single_Card = ({ d, carts, setCarts }) => {
             }
           </ul>
           <div className="mt-6">
-            <button onClick={handleBuyBtn} className={`rounded-full ${isBuyNow ? "btn btn-success btn-block" : "btn btn-primary btn-block"}`}>
+            <button onClick={handleBuyBtn} className={`rounded-full ${isBuyNow ? "btn btn-success btn-block" : "btn btn-primary btn-block text-white font-bold"}`}>
               {isBuyNow ? "Added to cart" : "Buy Now"}
             </button>
           </div>

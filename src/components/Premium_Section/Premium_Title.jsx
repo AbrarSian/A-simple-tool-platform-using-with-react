@@ -15,7 +15,7 @@ const Premium_Title = ({activeTab , setActiveTab, carts}) => {
       </div>
 
       {/* tab */}
-      <div className="flex justify-center items-center mt-3 lg:mt-5">
+      <div className="flex justify-center items-center mt-5">
 
         <div className="tabs tabs-box rounded-3xl px-1">
           <input
@@ -24,14 +24,15 @@ const Premium_Title = ({activeTab , setActiveTab, carts}) => {
             name="my_tabs_1"
             className={`tab rounded-3xl px-5 font-bold ${activeTab === "products"? "bg-[#4F39F6] text-white" : null}`}
             aria-label="Products"
-            defaultChecked
+            checked={activeTab === "products"}
           />
           <input
             onClick={() => setActiveTab("cart")}
             type="radio"
             name="my_tabs_1"
             className={`tab rounded-3xl px-5 font-bold ${activeTab === "cart"? "bg-[#4F39F6] text-white" : null}`}
-            aria-label={`Cart (${carts.length})`}
+            aria-label={`Cart ${carts.length < 1 ? "" : `(${carts.length})`}`}
+            checked={activeTab === "cart"}
           />
         </div>
       </div>

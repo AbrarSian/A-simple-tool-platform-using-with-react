@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing_Section = () => {
   return (
-    <div>
+    <div id="pricing" className="scroll-mt-25">
       {/* title part */}
       <div className="space-y-4 flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl lg:text-5xl font-extrabold">

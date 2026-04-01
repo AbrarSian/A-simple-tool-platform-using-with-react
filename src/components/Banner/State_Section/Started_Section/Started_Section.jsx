@@ -5,7 +5,7 @@ import rocketPng from "../../../../assets/rocket.png";
 
 const Started_Section = () => {
   return (
-    <div className="mt-10 mb-10 lg:mb-20 lg:mt-20">
+    <div id="features" className="scroll-mt-25 mt-10 mb-10 lg:mb-20 lg:mt-20">
       {/* title part */}
       <div className="space-y-4 flex flex-col justify-center items-center text-center">
         <h1 className="text-4xl lg:text-5xl font-extrabold">

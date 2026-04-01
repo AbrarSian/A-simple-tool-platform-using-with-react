@@ -22,7 +22,7 @@ const Footer = () => {
           <h6 className="footer-title">Product</h6>
           {["Features", "Pricing", "Templates", "Integrations"].map(
             (item, i) => (
-              <a key={i} className="link link-hover">
+              <a href={item === "Features" ? "#features" : item === "Pricing" ? "#pricing" : ""} key={i} className="link link-hover">
                 {item}
               </a>
             )
