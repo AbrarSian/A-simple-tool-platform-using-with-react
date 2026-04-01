@@ -76,7 +76,7 @@ const Navbar = () => {
             </button>
 
             {/* btn */}
-            <button className="btn bg-[#7C3AED] hover:bg-[#6D28D9] text-white border-none rounded-full px-6 min-h-0 h-11 capitalize shadow-md">
+            <button className="btn bg-[#7C3AED] hover:bg-[#6D28D9] text-white border-none rounded-full lg:px-6 min-h-0 lg:h-11 capitalize shadow-md">
               Get Started
             </button>
           </div>

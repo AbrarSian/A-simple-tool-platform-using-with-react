@@ -6,9 +6,11 @@ import Banner from './components/Banner/Banner'
 function App() {
   return (
     <>
-     <Navbar></Navbar>
-     <Banner></Banner>
-     <Footer></Footer>
+     <div className='max-w-400 lg:w-[85%] mx-auto'>
+        <Navbar></Navbar>
+        <Banner></Banner>
+        <Footer></Footer>
+     </div>
     </>
   )
 }
