@@ -19,13 +19,13 @@ const Navbar = () => {
               </label>
             </div>
             <div>
-              <a className="text-2xl md:text-3xl font-bold text-[#7C3AED] cursor-pointer">
+              <a className="text-2xl md:text-3xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent cursor-pointer">
                 DigiTools
               </a>
             </div>
           </div>
 
-          {/* Navbar center part (Navigation Links) */}
+          {/*center part*/}
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal gap-1 text-gray-600 font-medium">
               <li>
@@ -54,7 +54,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Navbar right part (Cart, Login, Button) */}
+          {/*right part*/}
           <div className="flex-1 justify-end flex items-center gap-2 md:gap-4">
             
             {/* cart */}
@@ -86,8 +86,8 @@ const Navbar = () => {
       {/* Mobile Sidebar items */}
       <div className="drawer-side z-50">
         <label htmlFor="main-drawer" className="drawer-overlay"></label>
-        <ul className="menu p-6 w-80 min-h-full bg-base-100 text-lg font-medium">
-          <div className="mb-8 px-4 text-2xl font-bold text-[#7C3AED]">
+        <ul className="menu p-6 w-50 min-h-full bg-base-100 text-lg font-medium">
+          <div className="mb-5 px-3 text-2xl font-bold text-[#7C3AED]">
             DigiTools
           </div>
           <li>
