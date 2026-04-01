@@ -7,6 +7,11 @@ const Single_Card = ({ d, carts, setCarts }) => {
 
   const handleBuyBtn = () =>{
     setIsBuyNow(true);
+    const isFound = carts.find(cart => cart.id === d.id);
+    if(isFound) {
+      toast.error("Item Already In Cart");
+      return
+    }
     setCarts([...carts, d]);
     toast.success("Item Added To Cart")
   }
@@ -55,7 +60,7 @@ const Single_Card = ({ d, carts, setCarts }) => {
             }
           </ul>
           <div className="mt-6">
-            <button onClick={handleBuyBtn} className="rounded-full btn btn-primary btn-block">
+            <button onClick={handleBuyBtn} className={`rounded-full ${isBuyNow ? "btn btn-success btn-block" : "btn btn-primary btn-block"}`}>
               {isBuyNow ? "Added to cart" : "Buy Now"}
             </button>
           </div>

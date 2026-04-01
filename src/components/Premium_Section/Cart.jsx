@@ -55,7 +55,7 @@ const Cart = ({ carts, setCarts }) => {
           <div>
             <button
               onClick={handleRemoveItem}
-              className="btn btn-primary w-full rounded-3xl text-[20px]"
+              className="btn btn-primary w-full rounded-3xl md:py-5 text-[20px]"
             >
               Proceed To Checkout
             </button>

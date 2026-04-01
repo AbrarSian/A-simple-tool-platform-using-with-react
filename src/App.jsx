@@ -27,7 +27,8 @@ function App() {
   return (
     <>
      <div className="max-w-400 mx-auto">
-        <div className="lg:w-[85%] mx-auto">
+
+        <div className="lg:w-[85%] mx-auto sticky top-0 z-50">
           <Navbar carts={carts}></Navbar>
         </div>
 
@@ -40,7 +41,7 @@ function App() {
         </div>
 
         <div className="lg:w-[85%] mx-auto my-14 lg:my-24">
-          <Premium_Title setActiveTab={setActiveTab} carts={carts}></Premium_Title>
+          <Premium_Title activeTab={activeTab} setActiveTab={setActiveTab} carts={carts}></Premium_Title>
           {
             activeTab === "products" ? <Premium_Section dataPromise={dataPromise} carts={carts} setCarts={setCarts}></Premium_Section>
             : <Cart carts={carts} setCarts={setCarts}></Cart>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Premium_Title = ({setActiveTab, carts}) => {
+const Premium_Title = ({activeTab , setActiveTab, carts}) => {
   return (
     <div>
       {/* title part */}
@@ -22,7 +22,7 @@ const Premium_Title = ({setActiveTab, carts}) => {
             onClick={() => setActiveTab("products")}
             type="radio"
             name="my_tabs_1"
-            className="tab rounded-3xl px-5"
+            className={`tab rounded-3xl px-5 font-bold ${activeTab === "products"? "bg-[#4F39F6] text-white" : null}`}
             aria-label="Products"
             defaultChecked
           />
@@ -30,7 +30,7 @@ const Premium_Title = ({setActiveTab, carts}) => {
             onClick={() => setActiveTab("cart")}
             type="radio"
             name="my_tabs_1"
-            className="tab rounded-3xl px-5"
+            className={`tab rounded-3xl px-5 font-bold ${activeTab === "cart"? "bg-[#4F39F6] text-white" : null}`}
             aria-label={`Cart (${carts.length})`}
           />
         </div>
