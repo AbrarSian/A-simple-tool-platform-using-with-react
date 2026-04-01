@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "ChatGPT",
+    "price": 20,
+    "period": "monthly",
+    "tag": "AI Assistant",
+    "tagtype": "text",
+    "features": ["Text generation", "Coding help", "Chat interface", "Multimodal AI"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/9680/9680614.png"
+  },
+  {
+    "id": 2,
+    "name": "Google Gemini",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "AI Assistant",
+    "tagtype": "text",
+    "features": ["Multimodal AI", "Google integration", "Code generation", "Search enhancement"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/2567/2567458.png"
+  },
+  {
+    "id": 3,
+    "name": "Midjourney",
+    "price": 10,
+    "period": "monthly",
+    "tag": "Image Generation",
+    "tagtype": "creative",
+    "features": ["AI image generation", "Art styles", "High-quality renders", "Prompt-based"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/12882/12882710.png"
+  },
+  {
+    "id": 4,
+    "name": "DALL·E",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Image Generation",
+    "tagtype": "creative",
+    "features": ["Text-to-image", "Image editing", "Variations", "High resolution"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/9539/9539828.png"
+  },
+  {
+    "id": 5,
+    "name": "Grammarly",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Writing",
+    "tagtype": "productivity",
+    "features": ["Grammar correction", "AI rewriting", "Tone detection", "Plagiarism check"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png"
+  },
+  {
+    "id": 6,
+    "name": "Notion AI",
+    "price": 10,
+    "period": "monthly",
+    "tag": "Workspace",
+    "tagtype": "productivity",
+    "features": ["AI writing", "Summarization", "Docs", "Task automation"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968756.png"
+  },
+  {
+    "id": 7,
+    "name": "Runway ML",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Video AI",
+    "tagtype": "creative",
+    "features": ["Text-to-video", "AI editing", "Motion tracking", "Green screen AI"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png"
+  },
+  {
+    "id": 8,
+    "name": "Jasper AI",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Marketing",
+    "tagtype": "text",
+    "features": ["Content writing", "SEO tools", "Templates", "Brand voice"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1041/1041916.png"
+  },
+  {
+    "id": 9,
+    "name": "Copy.ai",
+    "price": 36,
+    "period": "monthly",
+    "tag": "Marketing",
+    "tagtype": "text",
+    "features": ["Copywriting", "Email generator", "Automation", "Blog tools"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+  },
+  {
+    "id": 10,
+    "name": "GitHub Copilot",
+    "price": 10,
+    "period": "monthly",
+    "tag": "Coding",
+    "tagtype": "development",
+    "features": ["Code suggestions", "Autocomplete", "IDE integration", "AI pair programmer"],
+    "icon": "https://cdn-icons-png.flaticon.com/512/733/733553.png"
+  }
+]
