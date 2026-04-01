@@ -1,7 +1,7 @@
 import React from "react";
 import { FiShoppingCart, FiMenu } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
   return (
     <div className="drawer">
       <input id="main-drawer" type="checkbox" className="drawer-toggle" />
@@ -65,7 +65,7 @@ const Navbar = () => {
 
                 {/* Red Circle Badge */}
                 <span className="indicator-item badge badge-sm h-5 w-5 rounded-full border-none bg-[#FF4157] text-white text-[10px] font-bold flex items-center justify-center p-0">
-                  1
+                  {carts.length}
                 </span>
               </div>
             </button>
