@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner'
 import State_Section from './components/Banner/State_Section/State_Section'
 import Started_Section from './components/Banner/State_Section/Started_Section/Started_Section'
 import Pricing_Section from './components/Pricing_Section/Pricing_Section'
+import Ready_Section from './components/Ready_Section/Ready_Section'
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
         <div className='lg:w-[85%] mx-auto'>
           <Pricing_Section></Pricing_Section>
         </div>
-        
+
+        <div className='mt-7 lg:mt-15 bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
+          <Ready_Section></Ready_Section>
+        </div>
+
         <Footer></Footer>
      </div>
     </>
