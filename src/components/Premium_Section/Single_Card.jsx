@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
+import { toast } from "react-toastify";
 
 const Single_Card = ({ d, carts, setCarts }) => {
   const [isBuyNow, setIsBuyNow] = useState(false);
@@ -7,12 +8,13 @@ const Single_Card = ({ d, carts, setCarts }) => {
   const handleBuyBtn = () =>{
     setIsBuyNow(true);
     setCarts([...carts, d]);
+    toast.success("Item Added To Cart")
   }
 
   return (
     <div>
       {/* dynamic card */}
-      <div className="rounded-3xl card w-96 bg-base-100 border border-[#d5d2d2] shadow-sm hover:lg:scale-105 transition-all hover:shadow-md">
+      <div className="mx-auto rounded-3xl card w-96 bg-base-100 border border-[#d5d2d2] shadow-sm hover:lg:scale-105 transition-all hover:shadow-md">
         <div className="card-body">
           {/* badge */}
           <div className={`ml-auto badge badge-lg ${d.tagType === "best seller"? "rounded-2xl badge-warning font-bold text-[#BB4D00] bg-[#FEF3C6]" : d.tagType === "popular"? "badge-info text-[#4F39F6] font-bold bg-[#E1E7FF] rounded-2xl" : "rounded-2xl font-bold badge-success text-[#0A883E] bg-[#DBFCE7]"}`}>

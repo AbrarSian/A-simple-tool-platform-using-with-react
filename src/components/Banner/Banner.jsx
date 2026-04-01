@@ -37,7 +37,7 @@ const Banner = () => {
           </p>
 
           {/* description */}
-          <p className="mx-auto lg:mx-0 text-[#627382] text-[18px] mt-4 mb-7 w-11/12 md:w-7/12">
+          <p className="mx-auto lg:mx-0 text-[#627382] text-[18px] mt-4 mb-7 w-11/12 md:w-11/12">
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today. Explore
             Products

@@ -42,7 +42,7 @@ const Started_Section = () => {
               </div>
 
               {/* card 2 */}
-              <div className="relative flex flex-col items-center justify-center text-center p-8 md:p-10 lg:p-12 bg-white md:rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <div className="relative flex flex-col items-center justify-center text-center p-8 md:p-10 lg:p-12 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                 {/* number badge */}
                 <div className="absolute top-6 right-6 md:top-8 md:right-8 flex h-7 w-7 items-center justify-center rounded-full bg-[#9514FA]">
                   <span className="text-xs font-bold text-white">02</span>

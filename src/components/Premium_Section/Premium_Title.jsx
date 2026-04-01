@@ -1,6 +1,6 @@
 import React from "react";
 
-const Premium_Title = ({setActiveTab}) => {
+const Premium_Title = ({setActiveTab, carts}) => {
   return (
     <div>
       {/* title part */}
@@ -31,7 +31,7 @@ const Premium_Title = ({setActiveTab}) => {
             type="radio"
             name="my_tabs_1"
             className="tab rounded-3xl px-5"
-            aria-label="Cart"
+            aria-label={`Cart (${carts.length})`}
           />
         </div>
       </div>
